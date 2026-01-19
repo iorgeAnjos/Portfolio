@@ -1,0 +1,145 @@
+.container {
+  display: flex;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sidebar {
+  width: 280px;
+  background: #1f2933;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.foto {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.main {
+  flex: 1;
+  padding: 40px;
+  background: #d3d3d3;
+}
+
+.main h2 {
+  color: #1f2933;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 5px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+  }
+}
+
+.skills {
+  display: flex;
+  gap: 40px;
+  font-size: 100px;
+  margin-top: 15px;
+}
+
+.skills i {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.skills i:hover {
+  transform: scale(1.2);
+}
+
+.social {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 28px;
+}
+
+.social a {
+  color: white;
+  transition:
+    transform 0.3 ease,
+    color 0.3s ease;
+}
+
+.social a:hover {
+  transform: scale(2, 2);
+  color: #9ca3af;
+}
+
+/* 🌙 DARK MODE */
+.container.dark {
+  background: #111827;
+}
+
+.container.dark .main {
+  background: #111827;
+  color: #e5e7eb;
+}
+
+.container.dark .main h2 {
+  color: #f9fafb;
+  border-color: #374151;
+}
+
+.container.dark section {
+  color: #d1d5db;
+}
+
+.container.dark .sidebar {
+  background: #020617;
+}
+
+.container.dark .social a {
+  color: #e5e7eb;
+}
+
+/* Botão */
+.theme-toggle {
+  margin-top: 15px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: #374151;
+  color: white;
+  transition: background 0.3s ease;
+}
+
+.theme-toggle:hover {
+  background: #4b5563;
+}
+
+.whatsapp a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.whatsapp i {
+  font-size: 18px;
+  color: #25d366;
+}
+
+.whatsapp a:hover {
+  text-decoration: underline;
+}
