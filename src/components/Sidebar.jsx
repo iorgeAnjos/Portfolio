@@ -6,7 +6,7 @@ function Sidebar({ darkMode, setDarkMode }) {
       <img src={foto} alt="Foto de Jorge Anjos" className="foto" />
 
       <h2 className="name">Jorge Anjos</h2>
-      <p className="role">Desenvolvedor JR</p>
+      <p className="position">Desenvolvedor JR</p>
 
       <div className="info">
         <p>Salvador - Bahia</p>
