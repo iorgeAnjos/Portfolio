@@ -1,3 +1,9 @@
+import ProjectCard from "./ProjectCard";
+
+import yugiOh1 from "../assets/yugioh1.jpeg";
+import yugiOh2 from "../assets/yugioh2.jpeg";
+import yugiOh3 from "../assets/yugioh3.jpeg";
+
 function MainContent() {
   return (
     <main className="main">
@@ -26,15 +32,23 @@ function MainContent() {
       </section>
 
       <section>
+        <h2>Habilidades</h2>
         <div className="skills">
-          <i className="devicon-react-original colored" title="React"></i>
-          <i
-            className="devicon-javascript-plain colored"
-            title="JavaScript"
-          ></i>
-          <i className="devicon-python-plain colored" title="Python"></i>
-          <i className="devicon-flask-original" title="Flask"></i>
+          <i className="devicon-react-original colored"></i>
+          <i className="devicon-javascript-plain colored"></i>
+          <i className="devicon-python-plain colored"></i>
+          <i className="devicon-flask-original"></i>
         </div>
+      </section>
+
+      <section>
+        <h2>Projetos</h2>
+
+        <ProjectCard
+          title="Catálogo Yu-Gi-Oh"
+          images={[yugiOh1, yugiOh2, yugiOh3]}
+          deployLink="https://catalogo-yugioh-iorgeanjos.onrender.com/"
+        />
       </section>
     </main>
   );
