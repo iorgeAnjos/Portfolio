@@ -19,10 +19,10 @@ function MainContent() {
 
       <section>
         <h2>Formação</h2>
-        <p>Analise e desenvolvimento de sistemas / Descomplica</p>
+        <p>Análise e Desenvolvimento de Sistemas / Descomplica</p>
         <p>Curso JavaScript FullStack / BlueEdtech</p>
         <p>Curso completo Python / Udemy</p>
-        <p>Curso de ingles Mario Vergara 5.0 / Ingles Mario Vergara</p>
+        <p>Curso de inglês Mario Vergara 5.0 / Inglês Mario Vergara</p>
       </section>
 
       <section>
